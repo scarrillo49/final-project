@@ -26,12 +26,12 @@ $(document).ready(function() {
     // Handle the search button click event
     $("#search_button").click(function() {
         // Get the keyword from the search input
-        var keyword = $("#search_keyword").val().toLowerCase();
+        var keyword = $("#search_keyword").val().toLowerCase().replace('$', '');
         // Filter the transactions based on the keyword (must be exact)
         var filteredTransactions = transactions.filter(function(transaction) {
             return transaction.date.toLowerCase() === keyword ||
-                   transaction.amount.toString() === keyword ||
-                   transaction.category.toLowerCase() === keyword;
+                transaction.amount.toFixed(2) === keyword ||
+                transaction.category.toLowerCase() === keyword;
         });
         updateTransactionList(filteredTransactions);
     });

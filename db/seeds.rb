@@ -15,3 +15,11 @@ Transaction.create([
     { date: "2024-04-23", amount: 50.00, category: "Entertainment" },
     { date: "2024-04-22", amount: 100.00, category: "Savings" },
 ])
+
+Dog.create([
+    { name: "Gohan", breed: "Shiba Inu", birth_date: "2022-03-25", weight: 21.0 },
+    { name: "Princess", breed: "Beagle", birth_date: "2018-03-15", weight: 30.0 },
+    { name: "Spot", breed: "Dalmatian", birth_date: "2017-05-20", weight: 55.0 },
+    { name: "Malachi", breed: "Great Dane", birth_date: "2016-07-10", weight: 80.0 },
+    { name: "Max", breed: "French Bulldog", birth_date: "2015-09-05", weight: 25.0 },
+])
