@@ -1,5 +1,5 @@
 class Transaction < ApplicationRecord
-    validates :date, presence: true
+    validates :date, presence: { before: :today}
     validates :amount, numericality: { greater_than: 0 }
-    validates :category, presence: true
+    validates :category, length: { in: 2..10 }
 end

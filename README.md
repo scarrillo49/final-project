@@ -15,9 +15,9 @@ These pages are created to manage financial transactions and dog records. It all
   - `amount` (Decimal): The total value of the transaction.
   - `category` (String): The category of the transaction.
 - **Validations**:
-  - `date`: Presence must be true.
+  - `date`: Presence must be true, must be a valid date.
   - `amount`: Numericality, must be greater than 0.
-  - `category`: Presence must be true.
+  - `category`: Length must be between 2 and 10 characters inclusive.
 
 #### Dogs
 
@@ -27,7 +27,7 @@ These pages are created to manage financial transactions and dog records. It all
   - `birth_date` (Date): The dog’s date of birth.
   - `weight` (Decimal): The weight of the dog in pounds.
 - **Validations**:
-  - `name`: Presence must be true.
+  - `name`: Length must be between 2 and 20 characters inclusive.
   - `breed`: Presence must be true.
   - `birth_date`: Presence must be true, must be a valid date.
   - `weight`: Numericality, must be greater than 0.
