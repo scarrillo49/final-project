@@ -9,9 +9,9 @@
 #   end
 
 Transaction.create([
-    { date: "2022-04-25", amount: 520.00, category: "Groceries" },
-    { date: "2022-04-24", amount: 70.00, category: "Gas" },
-    { date: "2022-04-20", amount: 100.00, category: "Utilities" },
-    { date: "2022-04-23", amount: 50.00, category: "Entertainment" },
-    { date: "2022-04-22", amount: 100.00, category: "Savings" },
+    { date: "2024-04-25", amount: 520.00, category: "Groceries" },
+    { date: "2024-04-24", amount: 70.00, category: "Gas" },
+    { date: "2024-04-20", amount: 100.00, category: "Utilities" },
+    { date: "2024-04-23", amount: 50.00, category: "Entertainment" },
+    { date: "2024-04-22", amount: 100.00, category: "Savings" },
 ])
