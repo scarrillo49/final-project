@@ -46,6 +46,8 @@ These pages are created to manage financial transactions and dog records. It all
 
 **Solution**: Updated the seed data script to ensure all dates are entered in the correct format.
 
+### Challenge 3
+
 **Problem**: The transactions table was not updating after searches.
 
 **Solution**: Modified the update function to completely clear and then correctly update the table data using the .empty() method.
